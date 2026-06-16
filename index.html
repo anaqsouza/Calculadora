@@ -614,14 +614,11 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.15)}
 
     var payload = {
       fields: [
-        { name: 'firstname',      value: firstName },
-        { name: 'lastname',       value: lastName },
-        { name: 'email',          value: document.getElementById('fcEmail').value.trim() },
-        { name: 'phone',          value: document.getElementById('fcTel').value.trim() },
-        { name: 'company',        value: document.getElementById('fcEmpresa').value.trim() },
-        { name: 'jobtitle',       value: document.getElementById('fcCargo').value },
-        { name: 'annual_revenue', value: String(Math.round(fat * 12)) },
-        { name: 'message',        value: diagnostico }
+        { name: 'firstname', value: firstName },
+        { name: 'lastname',  value: lastName },
+        { name: 'email',     value: document.getElementById('fcEmail').value.trim() },
+        { name: 'phone',     value: document.getElementById('fcTel').value.trim() },
+        { name: 'message',   value: diagnostico }
       ],
       context: {
         pageUri: window.location.href,
